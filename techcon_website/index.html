@@ -1,0 +1,59 @@
+<!--Create the homepage (index.html) for the TechCon 2024 conference website, demonstrating effective use of HTML structure, embedding media, and designing with accessibility standards.
+
+Requirements:
+Header:
+
+Use a <header> tag to contain the top part of the page.
+Include the conference name within an <h1> tag to emphasize its importance.
+Implement a navigation menu using a <nav> tag with links (<a> tags) to other pages: About, Schedule, Register, and Contact. Ensure that each link is properly named and points to the respective HTML files (about.html, schedule.html, register.html, contact.html).
+Main Section:
+
+Utilize a <main> tag to define the dominant content of the webpage.
+Within the main section, use a <section> tag to introduce the conference. This section should include:
+A brief paragraph (<p>) describing the event.
+An embedded promotional video using the <video> tag with controls enabled. Make sure the video is accessible and includes subtitles or a description if available.
+Footer:
+
+Use a <footer> tag for the bottom part of the webpage.
+Include copyright information relevant to the event and the current year. Ensure this information is simple and clear. Make sure to explicitly add the text copyright.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TechCon 2024 COonference Website</title>
+</head>
+<body>
+    <header>
+        <h1>TechCon 2024 conference</h1>
+
+        <nav>
+            <ul>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li><a href="schedule.html" target="_blank">Schedule</a></li>
+                <li><a href="register.html" target="_blank">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <p>
+                This conference was organised by ALX for all upcoming tech enthusiast under the age of 15. Join us to learn, connect, and shape the future of technology.
+            </p>
+    
+            <video controls width="640">
+                <source src="conhighlight.mp4" type="video/mp4">
+                <source src="conhighlight.mkv" type="video/mp4">
+                <track src="captions_en.vtt" kind="captions" srclang="en" label="English">
+                Your Browser Does Not Support The Video Tag.
+            </video>
+        
+        </section>
+    </main>
+
+    <footer>
+        <P>&copy; 2024 TECHCON 2024 CONFERENCE. All rights reserved. Copyright</P>
+    </footer>
+</body>
+</html>
